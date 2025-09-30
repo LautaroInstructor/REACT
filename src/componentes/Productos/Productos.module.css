@@ -1,0 +1,11 @@
+.listaProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.itemProducto{
+    list-style: None;
+    padding: .5rem;
+}

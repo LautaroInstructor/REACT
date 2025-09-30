@@ -1,0 +1,322 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cámara Analógica Fiamma",
+        "precio": 62000,
+        "categoria": "fotografia",
+        "stock": 3,
+        "imagen": ""
+    },
+    {
+        "id": 2,
+        "nombre": "Trípode Porta Profesional",
+        "precio": 18500,
+        "categoria": "fotografia",
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 3,
+        "nombre": "Cámara Instantánea Noblex",
+        "precio": 87000,
+        "categoria": "fotografia",
+        "stock": 2,
+        "imagen": ""
+    },
+    {
+        "id": 4,
+        "nombre": "Lente Fotográfico Porta 50mm",
+        "precio": 45000,
+        "categoria": "fotografia",
+        "stock": 6,
+        "imagen": ""
+    },
+    {
+        "id": 5,
+        "nombre": "Cámara Digital Noblex X10",
+        "precio": 110000,
+        "categoria": "fotografia",
+        "stock": 1,
+        "imagen": ""
+    },
+    {
+        "id": 6,
+        "nombre": "Estabilizador Porta",
+        "precio": 56000,
+        "categoria": "fotografia",
+        "stock": 4,
+        "imagen": ""
+    },
+    {
+        "id": 7,
+        "nombre": "Flash Fotográfico Noblex",
+        "precio": 38000,
+        "categoria": "fotografia",
+        "stock": 7,
+        "imagen": ""
+    },
+    {
+        "id": 8,
+        "nombre": "Cámara Deportiva EXO Action",
+        "precio": 95000,
+        "categoria": "fotografia",
+        "stock": 2,
+        "imagen": ""
+    },
+    {
+        "id": 9,
+        "nombre": "Cámara Analógica Porta 135",
+        "precio": 47000,
+        "categoria": "fotografia",
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 10,
+        "nombre": "Cámara Compacta Noblex P10",
+        "precio": 76000,
+        "categoria": "fotografia",
+        "stock": 3,
+        "imagen": ""
+    },
+    {
+        "id": 11,
+        "nombre": "Notebook BGH Positivo 14”",
+        "precio": 420000,
+        "categoria": "informatica",
+        "stock": 2,
+        "imagen": ""
+    },
+    {
+        "id": 12,
+        "nombre": "PC Armada EXO Gamer",
+        "precio": 385000,
+        "categoria": "informatica",
+        "stock": 1,
+        "imagen": ""
+    },
+    {
+        "id": 13,
+        "nombre": "Notebook Noblex E14",
+        "precio": 310000,
+        "categoria": "informatica",
+        "stock": 3,
+        "imagen": ""
+    },
+    {
+        "id": 14,
+        "nombre": "PC All in One BGH",
+        "precio": 450000,
+        "categoria": "informatica",
+        "stock": 2,
+        "imagen": ""
+    },
+    {
+        "id": 15,
+        "nombre": "Notebook CX Intel i5",
+        "precio": 380000,
+        "categoria": "informatica",
+        "stock": 4,
+        "imagen": ""
+    },
+    {
+        "id": 16,
+        "nombre": "Mini PC EXO Smart",
+        "precio": 220000,
+        "categoria": "informatica",
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 17,
+        "nombre": "Notebook Tedge Pro",
+        "precio": 295000,
+        "categoria": "informatica",
+        "stock": 3,
+        "imagen": ""
+    },
+    {
+        "id": 18,
+        "nombre": "PC Armada BGH Office",
+        "precio": 260000,
+        "categoria": "informatica",
+        "stock": 2,
+        "imagen": ""
+    },
+    {
+        "id": 19,
+        "nombre": "Notebook Noblex Ultraliviana",
+        "precio": 350000,
+        "categoria": "informatica",
+        "stock": 2,
+        "imagen": ""
+    },
+    {
+        "id": 20,
+        "nombre": "Notebook EXO Infinity",
+        "precio": 330000,
+        "categoria": "informatica",
+        "stock": 1,
+        "imagen": ""
+    },
+    {
+        "id": 21,
+        "nombre": "Auriculares Koss Porta Pro",
+        "precio": 45000,
+        "categoria": "audio",
+        "stock": 4,
+        "imagen": ""
+    },
+    {
+        "id": 22,
+        "nombre": "Parlante Noblex Bluetooth",
+        "precio": 32000,
+        "categoria": "audio",
+        "stock": 6,
+        "imagen": ""
+    },
+    {
+        "id": 23,
+        "nombre": "Auriculares EXO In-Ear",
+        "precio": 18000,
+        "categoria": "audio",
+        "stock": 10,
+        "imagen": ""
+    },
+    {
+        "id": 24,
+        "nombre": "Parlante Portátil BGH",
+        "precio": 28000,
+        "categoria": "audio",
+        "stock": 8,
+        "imagen": ""
+    },
+    {
+        "id": 25,
+        "nombre": "Auriculares Tedge Gamer",
+        "precio": 37000,
+        "categoria": "audio",
+        "stock": 7,
+        "imagen": ""
+    },
+    {
+        "id": 26,
+        "nombre": "Minicomponente Noblex",
+        "precio": 95000,
+        "categoria": "audio",
+        "stock": 3,
+        "imagen": ""
+    },
+    {
+        "id": 27,
+        "nombre": "Auriculares Bluetooth CX",
+        "precio": 42000,
+        "categoria": "audio",
+        "stock": 6,
+        "imagen": ""
+    },
+    {
+        "id": 28,
+        "nombre": "Soundbar EXO Home",
+        "precio": 105000,
+        "categoria": "audio",
+        "stock": 2,
+        "imagen": ""
+    },
+    {
+        "id": 29,
+        "nombre": "Auriculares Noblex Studio",
+        "precio": 54000,
+        "categoria": "audio",
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 30,
+        "nombre": "Parlante CX Portable",
+        "precio": 36000,
+        "categoria": "audio",
+        "stock": 7,
+        "imagen": ""
+    },
+    {
+        "id": 31,
+        "nombre": "Cargador Solar HDC",
+        "precio": 15000,
+        "categoria": "accesorios",
+        "stock": 7,
+        "imagen": ""
+    },
+    {
+        "id": 32,
+        "nombre": "Mouse Inalámbrico Tedge",
+        "precio": 9800,
+        "categoria": "accesorios",
+        "stock": 12,
+        "imagen": ""
+    },
+    {
+        "id": 33,
+        "nombre": "Teclado EXO Mecánico",
+        "precio": 22000,
+        "categoria": "accesorios",
+        "stock": 6,
+        "imagen": ""
+    },
+    {
+        "id": 34,
+        "nombre": "Cargador Portátil Noblex",
+        "precio": 18000,
+        "categoria": "accesorios",
+        "stock": 8,
+        "imagen": ""
+    },
+    {
+        "id": 35,
+        "nombre": "Pad Mouse Gamer CX",
+        "precio": 6000,
+        "categoria": "accesorios",
+        "stock": 15,
+        "imagen": ""
+    },
+    {
+        "id": 36,
+        "nombre": "Soporte Notebook Porta",
+        "precio": 12000,
+        "categoria": "accesorios",
+        "stock": 9,
+        "imagen": ""
+    },
+    {
+        "id": 37,
+        "nombre": "Auriculares Manos Libres BGH",
+        "precio": 9500,
+        "categoria": "accesorios",
+        "stock": 11,
+        "imagen": ""
+    },
+    {
+        "id": 38,
+        "nombre": "Teclado Inalámbrico Noblex",
+        "precio": 21000,
+        "categoria": "accesorios",
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 39,
+        "nombre": "Cable USB-C Tedge",
+        "precio": 4000,
+        "categoria": "accesorios",
+        "stock": 20,
+        "imagen": ""
+    },
+    {
+        "id": 40,
+        "nombre": "Cooler Notebook EXO",
+        "precio": 14500,
+        "categoria": "accesorios",
+        "stock": 10,
+        "imagen": ""
+    }
+]
