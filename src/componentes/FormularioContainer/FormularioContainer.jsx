@@ -42,7 +42,7 @@ export function FormularioContainer() {
         }
 
         // --- Lógica para subir la imagen a Imgbb ---
-        const apiKey = '696db28a61d7dded63b5d39bd8d01711'; 
+        const apiKey = import.meta.env.VITE_IMGBB_API_KEY;
         const formData = new FormData();
         formData.append('image', imagenFile);
 
@@ -61,14 +61,14 @@ export function FormularioContainer() {
                 const productoCompleto = {
                     ...datosForm,
                     // Convertimos precio y stock a número para guardarlos correctamente
-                    precio: parseFloat(datosForm.precio), 
+                    precio: parseFloat(datosForm.precio),
                     stock: parseInt(datosForm.stock, 10),
                     imagen: datosImgbb.data.url // Renombramos 'urlImagen' a 'imagen' para consistencia
                 };
 
                 // --- 2. LÓGICA PARA SUBIR DATOS A FIRESTORE ---
                 console.log('Enviando producto a Firebase:', productoCompleto);
-                
+
                 // Obtenemos la instancia de la base de datos
                 const db = getFirestore();
                 // Apuntamos a la colección "productos" (si no existe, se crea)
