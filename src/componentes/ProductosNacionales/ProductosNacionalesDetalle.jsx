@@ -4,8 +4,7 @@ import { useParams } from 'react-router-dom';
 // Importaciones clave para obtener un solo documento
 import { doc, getDoc } from "firebase/firestore";
 import { db } from '../../firebase/config';
-import styles from './productosNacionales.module.css';
-// En src/componentes/ProductosNacionales/ProductosNacionalesDetalle.jsx    
+import styles from './ProductosNacionales.module.css';
 import { Helmet } from 'react-helmet';
 
 const ProductosNacionalesDetalle = () => {
