@@ -2,6 +2,8 @@ import { ItemList } from "../ItemList/ItemList";
 import styles from './ItemListContainer.module.css';
 import { useState, useEffect } from "react";
 import { Spinner} from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import TarjetaProducto from '../Tarjetas/TarjetaProducto';
 export function ItemListContainer({ Mensaje }) {
   const [productos, setProductos] = useState([]);
   const [error, setError] = useState(null);

@@ -1,48 +1,99 @@
 // src/components/Cart/Cart.jsx
 import React from 'react';
 import { useCart } from '../../context/CartContext';
-import { Link } from 'react-router-dom'; // Importamos Link para la navegación
+import { Link } from 'react-router-dom';
+import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 
 const Cart = () => {
   const { cart, clearCart, getCartTotal, removeItem } = useCart();
 
-  // Si el carrito está vacío, mostramos un mensaje y un botón para volver
   if (cart.length === 0) {
     return (
-      <div>
-        <h1>El carrito está vacío</h1>
-        <p>Agregá productos para continuar la compra.</p>
-        <Link to="/productos" className="btn-volver">
-          Ver Productos
-        </Link>
-      </div>
+      <Container className="my-5">
+        <Row className="justify-content-center">
+          <Col xs={12} md={6}>
+            <Card className="text-center">
+              <Card.Body className="py-5">
+                <Card.Title>Carrito Vacío</Card.Title>
+                <Card.Text className="text-muted mb-3">
+                  No hay productos en tu carrito.
+                </Card.Text>
+                <Button as={Link} to="/productos" variant="primary">
+                  Ver Productos
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 
-  // Si hay productos, los mostramos con las opciones de finalizar y vaciar
   return (
-    <div>
-      <h1>Carrito de Compras</h1>
-      {cart.map(item => (
-        <div key={item.id} className="cart-item">
-          <h4>{item.nombre}</h4>
-          <p>Cantidad: {item.cantidad}</p>
-          <p>Precio unitario: ${item.precio}</p>
-          <p>Subtotal: ${item.precio * item.cantidad}</p>
-          <hr />
-          {/* Agregamos estos nomás y su importación! */}
-          <button onClick={() => removeItem(item.id)} className="btn-eliminar">
-            Eliminar
-          </button>
-        </div>
-      ))}
-      <hr />
-      <h3>Total a pagar: ${getCartTotal()}</h3>
-      <button onClick={clearCart} className="btn-vaciar">Vaciar Carrito</button>
-      <Link to="/" onClick={()=>alert("Gracias por comprar")}className="btn-finalizar">
-        Finalizar Compra
-      </Link>
-    </div>
+    <Container className="my-4">
+      <Row>
+        <Col>
+          <h1 className="mb-4">Carrito de Compras</h1>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col lg={8}>
+          <ListGroup>
+            {cart.map(item => (
+              <ListGroup.Item key={item.id} className="d-flex justify-content-between align-items-center">
+                <div>
+                  <h6 className="mb-1">{item.nombre}</h6>
+                  <small className="text-muted">
+                    ${item.precio} x {item.cantidad} = ${item.precio * item.cantidad}
+                  </small>
+                </div>
+                <Button 
+                  variant="outline-danger" 
+                  size="sm"
+                  onClick={() => removeItem(item.id)}
+                >
+                  Eliminar
+                </Button>
+              </ListGroup.Item>
+            ))}
+          </ListGroup>
+        </Col>
+
+        <Col lg={4}>
+          <Card>
+            <Card.Body>
+              <h5>Resumen</h5>
+              <p className="h4 text-primary">Total: ${getCartTotal()}</p>
+              
+              <div className="d-grid gap-2 mt-3">
+                <Button 
+                  variant="primary" 
+                  onClick={() => alert("Gracias por tu compra!")}
+                >
+                  Finalizar Compra
+                </Button>
+                
+                <Button 
+                  variant="outline-danger" 
+                  onClick={clearCart}
+                >
+                  Vaciar Carrito
+                </Button>
+
+                <Button 
+                  as={Link} 
+                  to="/productos" 
+                  variant="outline-secondary"
+                >
+                  Seguir Comprando
+                </Button>
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

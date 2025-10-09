@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import styles from './Productos.module.css';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import TarjetaProducto from '../Tarjetas/TarjetaProducto';
 function Productos({ Mensaje }) {
   const [productos, setProductos] = useState([]);
   const [error, setError] = useState(null);
   const [cargando, setCargando] = useState(true);
+  const [searchTerm, setSearchTerm] = useState('');
   // useEffect con su fetch que llama a data/json
   useEffect(() => {
     fetch('/data/productos.json')
@@ -32,19 +34,38 @@ function Productos({ Mensaje }) {
   if (error) {
     return <p>Error: {error}</p>;
   }
+  const productosFiltrados = productos.filter(prod =>
+    prod.nombre.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
-    <Row>
-      {productos.map((producto) => (
-        <Col xs={12} sm={6} lg={4} key={producto.id} className="mb-4">
-          <Link to={`/producto/${producto.id}`} className={styles.itemProducto}>
-            <h2>{producto.nombre}</h2>
-            <img src={producto.imagen} alt={producto.nombre} width="150" height="150" />
-            <p>Precio: ${producto.precio}</p>
-          </Link>
+    <Container>
+      {/*  */}
+      <Row className="mb-4">
+        <Col>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Buscar en los productos cargados..."
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
         </Col>
-      ))}
-    </Row>
+      </Row>
+      <Row>
+        <h1>{Mensaje}</h1>
+        {productosFiltrados.map((producto) => (
+          <Col xs={12} sm={6} lg={4} key={producto.id} className="mb-4">
+            <TarjetaProducto
+              id={producto.id}
+              nombre={producto.nombre}
+              precio={producto.precio}
+              imagen={producto.imagen}
+              rutaBase="/producto" // Ruta para esta sección
+            />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
 

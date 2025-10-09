@@ -15,17 +15,20 @@ import Gestion from './componentes/Gestion/Gestion';
 import Login from './componentes/Login/Login';
 import Registro from './componentes/Login/Registro';
 import ProtectedRoute from './componentes/ProtectedRoute/ProtectedRoute';
+import Inicio from './componentes/Inicio/Inicio'
 // En /src/index.js o /src/App.jsx
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { SearchProvider } from "./context/SearchContext";
 function App() {
   return (
     <>
+    <SearchProvider>
       <Routes>
         {/* Ruta que envuelve a las demás para mostrar Header y Footer siempre */}
         <Route element={<Layout />}>
-          <Route path="/" element={<h1>Página de Inicio</h1>} />
-          <Route path="/productos" element={<ItemListContainer Mensaje={"Productos destacados"} />} />
-          <Route path="/destacados" element={<Productos Mensaje={"Todos los productos"} />} />
+          <Route path="/inicio" element={<Inicio /> }/>
+          <Route path="/productos" element={<ItemListContainer Mensaje={"Productos"} />} />
+          <Route path="/destacados" element={<Productos Mensaje={"Destacados"} />} />
           {/* ... dentro de <Routes> */}
           <Route path="/producto/:id" element={<ProductoDetalle />} />
           <Route path="/carrito" element={<Cart />} /> {/* AÑADIMOS LA NUEVA RUTA */}
@@ -36,7 +39,7 @@ function App() {
           <Route
             path="/alta"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute rolesPermitidos={['admin']}>
                 <Gestion />
               </ProtectedRoute>
             }
@@ -44,6 +47,7 @@ function App() {
           <Route path="/registro" element={<Registro />} />
         </Route>
       </Routes>
+      </SearchProvider>
     </>
   );
 }

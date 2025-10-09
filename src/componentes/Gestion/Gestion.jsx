@@ -216,6 +216,7 @@ const Gestion = () => {
             <hr />
             <h3>Lista de Productos</h3>
             <ul>
+                {/*  */}
                 {productos.map((prod) => (
                     <ProductoItem key={prod.id}>
                         <ProductoInfo>

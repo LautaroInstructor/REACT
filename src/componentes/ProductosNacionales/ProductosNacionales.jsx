@@ -15,7 +15,6 @@ const ProductosNacionales = () => {
   const [hayMas, setHayMas] = useState(true);
 
   const PRODUCTOS_POR_PAGINA = 4;
-
   // Logica de carga inicial extraida a su propia funcion ---
   const obtenerProductosIniciales = () => {
     setCargando(true);

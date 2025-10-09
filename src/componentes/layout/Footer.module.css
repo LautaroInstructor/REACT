@@ -1,0 +1,31 @@
+.footerPrincipal {
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+  margin-top: 8px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.equipoSeccion {
+  background: #fafeff;
+  background: linear-gradient(360deg, rgba(250, 254, 255, 1) 0%, rgba(235, 239, 255, 1) 73%, rgba(212, 220, 255, 1) 99%);
+}
+
+.equipoSeccion h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.footer-info {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-info p {
+  margin: 0;
+  color: #757575;
+  font-size: 0.9rem;
+}

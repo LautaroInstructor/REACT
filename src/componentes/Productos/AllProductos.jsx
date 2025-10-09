@@ -10,8 +10,6 @@ import { Container, Row, Col, Spinner, Button, Alert } from 'react-bootstrap';
 const AllProductos = () => {
   const [productos, setProductos] = useState([]);
   const [loading, setLoading] = useState(true);
-  
-  // ---> Estados nuevos para el paginador <---
   const [lastVisible, setLastVisible] = useState(null); // Guarda la referencia al último producto de la página actual
   const [hasMore, setHasMore] = useState(true); // Indica si hay más productos para cargar
   const [loadingMore, setLoadingMore] = useState(false); // Estado para el botón "Cargar más"
