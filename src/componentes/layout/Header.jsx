@@ -24,7 +24,7 @@ function Header() {
       <Container>
         <Navbar.Brand
           style={{ cursor: 'pointer' }}
-          onClick={() => handleNavigation('/inicio')}
+          onClick={() => handleNavigation('/')}
         >
           Mi Tienda
         </Navbar.Brand>
@@ -33,7 +33,7 @@ function Header() {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/inicio">
+            <Nav.Link as={Link} to="/">
               Inicio
             </Nav.Link>
             <Nav.Link as={Link} to="/productos">

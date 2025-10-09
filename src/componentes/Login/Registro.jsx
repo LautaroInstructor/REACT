@@ -37,7 +37,7 @@ const Registro = () => {
                     navigate('/login');
                 } else {
                     // Si el usuario cancela, lo redirigimos a la página de inicio
-                    navigate('/inicio');
+                    navigate('/');
                 }
             } else {
                 // Para cualquier otro error (contraseña débil, email inválido, etc.),

@@ -26,7 +26,7 @@ function App() {
       <Routes>
         {/* Ruta que envuelve a las demás para mostrar Header y Footer siempre */}
         <Route element={<Layout />}>
-          <Route path="/inicio" element={<Inicio /> }/>
+          <Route path="/" element={<Inicio /> }/>
           <Route path="/productos" element={<ItemListContainer Mensaje={"Productos"} />} />
           <Route path="/destacados" element={<Productos Mensaje={"Destacados"} />} />
           {/* ... dentro de <Routes> */}
